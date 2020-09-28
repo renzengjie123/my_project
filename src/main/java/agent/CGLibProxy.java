@@ -7,7 +7,7 @@ import org.springframework.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
- * CGlib动态代理类
+ * CGlib动态代理类  利用ASM（开源的Java字节码编辑库，操作字节码）开源包，将代理对象类的class文件加载进来，通过修改其字节码生成子类来处理。
  */
 public class CGLibProxy implements MethodInterceptor {
 
